@@ -1,0 +1,71 @@
+// ===============LOCATION SECTION==========================
+.location-section {
+
+}
+.location-section__wrapper {
+    padding: 20px 0 150px 0;
+    .location-section__lead {
+
+    }
+    .site-map {
+        width: 100%;
+    }
+    .location-section__list {
+        @include list-unstyled;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .location-section__item {
+        display: flex;
+        align-items: flex-start;
+        .addres-text {
+            width: 246px;
+            margin: 0 0 0 10px;
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+        }
+        .call-number {
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            text-decoration: none;
+            margin-left: 10px;
+            position: relative;
+            padding: 0 5px;
+        }
+        .email-addres {
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            text-decoration: none;
+            margin-left: 10px;
+            position: relative;
+            padding: 0 5px;
+        }
+        .email-addres::after, .call-number::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            margin-top: 18px;
+            left: 0;
+            transition: all 0.3s;
+        }
+        .email-addres:hover::after, .call-number:hover::after {
+            width: 100%;
+        }
+        .social-text {
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+        }
+        .social-icons {
+            margin-left: 15px;
+        }
+    }
+}

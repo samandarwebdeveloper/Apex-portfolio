@@ -1,0 +1,50 @@
+// =============SITE HEADER=====================
+.site-header {
+    padding-top: 20px;
+}
+.site-header__wrapper {
+    display: flex;
+    align-items: center;
+    .site-header__logo-link {
+        display: block;
+        .site-header__logo-img {
+            display: block;
+            width: 287px;
+            height: 100px;
+        }
+    }
+}
+.site-navbar {
+    margin-left: auto;
+    .site-navbar__list {
+        @include list-unstyled;
+        display: flex;
+        padding-bottom: 25px;
+        .navbar-list__item {
+
+            .navbar-list__item-link {
+                display: block;
+                text-decoration: none;
+                color: #000;
+                position: relative;
+                padding: 0 5px;
+            }
+            .navbar-list__item-link::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 3px;
+                background-color: #000;
+                margin-top: 18px;
+                left: 0;
+                transition: all 0.3s;
+            }
+            .navbar-list__item-link:hover::after {
+                width: 100%;
+            }
+        }
+        .navbar-list__item ~ .navbar-list__item  {
+            margin-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+// ===================COURSES SECTION=============================
+.courses-section {
+
+}
+.courses-section__wrapper {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.courses-section__lead {
+    font-size: 33px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: $color-primary;
+}
+.courses-carruesel__wrapper {
+    overflow: hidden;
+}
+.courses-section__list {
+    @include list-unstyled;
+    display: flex;
+    grid-gap: 1em;
+    transition: all 0.7s ease-in-out;
+    margin-bottom: 40px;
+    .courses-section__item {
+        background-color: #ECFEFA;
+        width: 369px;
+        height: 393px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.13);
+        .courses-section__item-img {
+        }
+        .courses-section__item-box {
+            background-color: #ECFEFA;
+            padding: 37px;
+        }
+        .courses-section__item-lead {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .courses-section__item-text {
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            margin-bottom: 30px;
+        }
+        .courses-section__item-btn {
+            background-color: $color-primary;
+            color: #fff;
+            width: 100%;
+            height: 46px;
+            font-weight: bold;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.02em;
+            cursor: pointer;
+        }
+        .courses-section__item-btn:hover {
+            background-color: #fff;
+            border: 1px solid #000;
+            color: #000;
+        }
+    }
+    .courses-section__item ~ .courses-section__item {
+        margin-left: 15px;
+    }
+    
+}
+.courses-caruesel__btn {
+    text-align: center;
+    user-select: none;
+}

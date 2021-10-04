@@ -1,0 +1,49 @@
+// ================SITE HERO SECTION====================
+.site-main {
+
+}
+.hero-section {
+
+}
+.hero-section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .hero__title {
+        margin-top: 80px;
+        max-width: 620px;
+        .hero-lead {
+            font-size: 53px;
+            line-height: 65px;
+            letter-spacing: 0.02em;
+            margin-bottom: 20px;
+        }
+        .hero-text {
+            font-size: 23.4946px;
+            line-height: 29px;
+            letter-spacing: 0.02em;
+            margin-bottom: 40px;
+        }
+        .hero-button {
+            display: inline-block;
+            padding: 22px 47px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            background-color: $color-primary;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+        }
+        .hero-button:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+        }
+    }
+    .hero-img {
+        width: 407px;
+        height: 621px;
+    }
+}
