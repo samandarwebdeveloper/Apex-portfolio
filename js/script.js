@@ -1,8 +1,23 @@
+// ============HAMBURGER MENU======================
+var menu = document.querySelector(".hamburger-navbar");
+var hamburgerButton = document.querySelector(".ham");
+var menuCover = document.querySelector(".menu");
 
+hamburgerButton.onclick = function () {
+  menu.style.transform = "translateX(-200px)";
+  menuCover.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target == menuCover) {
+    menuCover.style.display = "none";
+  }
+}
 
 // =====================NEWS SECTION CARUESEL JS================================
 const newsButtonsWrapper = document.querySelector(".news-buttons");
 const newsSlides = document.querySelector(".news-section__list");
+
 
 newsButtonsWrapper.addEventListener("click", e => {
   if (e.target.nodeName === "BUTTON") {
@@ -15,12 +30,14 @@ newsButtonsWrapper.addEventListener("click", e => {
     } else if (e.target.classList.contains("second")) {
         newsSlides.style.transform = "translateX(-36%)";
       e.target.classList.add("scroll-btn--active");
+
     } else if (e.target.classList.contains('third')){
         newsSlides.style.transform = 'translatex(-72%)';
       e.target.classList.add('scroll-btn--active');
     }
   }
 });
+
 
 // =====================COURSES SECTION CARUESEL JS================================
 const coursesButtonsWrapper = document.querySelector(".courses-caruesel__btn");

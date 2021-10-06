@@ -30,6 +30,8 @@ body {
 
 img {
   height: auto;
+  object-fit: contain;
+  object-position: center;
 }
 .scroll-btn {
   background-color: #646464;

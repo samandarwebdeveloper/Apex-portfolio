@@ -5,7 +5,11 @@
 .location-section__wrapper {
     padding: 20px 0 150px 0;
     .location-section__lead {
-
+        font-size: 33px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #00445B;
     }
     .site-map {
         width: 100%;
@@ -66,6 +70,27 @@
         }
         .social-icons {
             margin-left: 15px;
+        }
+    }
+}
+@include breakpoint-down (900px) {
+    .location-section__wrapper {
+        padding: 20px 0 120px 0;
+        .location-section__lead {
+            font-size: 26px;
+            line-height: 30px;
+        }
+        .site-map {
+
+        }
+        .location-section__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .location-section__item {
+            margin: 15px;
         }
     }
 }

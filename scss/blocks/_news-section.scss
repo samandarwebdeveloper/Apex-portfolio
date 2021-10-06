@@ -25,6 +25,8 @@
     margin-bottom: 39px;
 }
 .news-section__item {
+    position: relative;
+    z-index: 0;
     width: 369px;
     .new-section__item-box {
         padding-left: 14px;
@@ -54,4 +56,19 @@
 .news-buttons {
     text-align: center;
     user-select: none;
+}
+@include breakpoint-down (1024px) {
+    .news-section__item ~ .news-section__item {
+        margin-left: -20px;
+    }
+}
+@include breakpoint-down (480px) {
+    
+    .news-section__wrapper {
+        padding-top: 50px;
+        .news-section__lead {
+        font-size: 26px;
+        line-height: 20px;
+        }   
+    }
 }

@@ -32,3 +32,13 @@
     text-align: center;
     user-select: none;
 }
+@include breakpoint-down (480px) {
+    .lessons-videos-section__wrapper {
+        padding: 20px 0 80px 0;
+        .lessons-videos-section__lead {
+            font-size: 26px;
+            line-height: 30px;
+
+        }
+    }
+}

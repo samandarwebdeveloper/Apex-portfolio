@@ -25,3 +25,22 @@
     }  
     
 }
+@include breakpoint-down (480px) {
+    .lessons-photos-section__wrapper {
+        padding: 20px 0 80px 0;
+        .lessons-photos-section__lead {
+            font-size: 26px;
+            line-height: 30px;
+        }   
+    }
+    .lessons-photos__list {
+
+        .lessons-photos__item {
+            width: 100%;
+            .lessons-photos__item-img {
+                width: 100%;
+            }
+        }  
+        
+    }
+}
