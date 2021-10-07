@@ -14,6 +14,41 @@ window.onclick = function(event) {
   }
 }
 
+var courseWrapper = document.querySelector(".course-register__wrapper");
+var matemButton = document.querySelector(".matem");
+var fizikaButton = document.querySelector(".fizika");
+var inglizButton = document.querySelector(".ingliz");
+var courseCover = document.querySelector(".course-register");
+var courseComplete = document.querySelector(".course-btn");
+var courseCompleteWrap = document.querySelector(".course-regester__complete");
+var courseCompleteBtn = document.querySelector(".course-complete__btn");
+
+matemButton.onclick = function () {
+  courseCover.style.display = "block";
+}
+
+fizikaButton.onclick = function () {
+  courseCover.style.display = "block";
+}
+
+inglizButton.onclick = function () {
+  courseCover.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target == courseCover) {
+    courseCover.style.display = "none";
+  }
+}
+
+courseComplete.onclick = function() {
+  courseCover.style.display = "none";
+  courseCompleteWrap.style.display = "block";
+}
+courseCompleteBtn.onclick = function() {
+  courseCompleteWrap.style.display = "none";
+}
+
 // =====================NEWS SECTION CARUESEL JS================================
 const newsButtonsWrapper = document.querySelector(".news-buttons");
 const newsSlides = document.querySelector(".news-section__list");
@@ -30,7 +65,6 @@ newsButtonsWrapper.addEventListener("click", e => {
     } else if (e.target.classList.contains("second")) {
         newsSlides.style.transform = "translateX(-36%)";
       e.target.classList.add("scroll-btn--active");
-
     } else if (e.target.classList.contains('third')){
         newsSlides.style.transform = 'translatex(-72%)';
       e.target.classList.add('scroll-btn--active');

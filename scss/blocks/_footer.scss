@@ -156,5 +156,23 @@
             line-height: 30px;
 
         }
+        .form-box {
+            width: 100%;
+            .input-name {
+                margin: 10px;
+                width: 100%;
+            }
+            .input-number {
+                margin: 10px;
+                width: 100%;
+            }
+            .input-email {
+                margin: 10px;
+                width: 100%;
+            }
+            .button-submit {
+                margin: 10px;
+            }
+        }
     }
 }
